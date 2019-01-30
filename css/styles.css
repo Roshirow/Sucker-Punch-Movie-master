@@ -1,0 +1,146 @@
+/*
+  DIAGNOSTIC STYLING
+*/
+body {
+	display: grid;
+	grid-template-columns: 75% 25%;
+	grid-template-rows: 8vw 10vw 10vw 3vw;
+	grid-gap: 1em;
+	max-width: 100em;
+	background: lightblue
+		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1882231/suckerpunchthree.png)
+		center center repeat fixed;
+	background-size: 100% auto;
+}
+
+
+/************
+LAYOUT
+************/
+body {
+  /* Center to Page   */
+  margin: 0 auto;
+  padding: 1em 0;
+  
+  /* CSS Grid Layout   */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+.wrapper {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(6, 20%);
+}
+header,
+footer {
+  grid-column: 1 / span 5;
+}
+
+main {
+  grid-column: 1 / span 3;
+}
+
+aside {
+  grid-column: span 2;
+}
+aside,
+footer {
+	background: rgb(240, 255, 255, 0.2);
+	border-radius: 5px;
+}
+
+/************
+HEADER
+************/
+/* Your Styles */
+.image img {
+	width: 500px;
+	height: auto;
+}
+
+/************
+MOVIE TRAILER w/ MEDIA ELEMENT PLAYER
+************/
+/* Fit <video> to container */
+video {
+width:100%;
+margin-bottom:15px;
+}
+
+.mejs__currenttime, 
+.mejs__duration {
+  font-size: 18px;
+}
+
+.mejs__time-current {
+  background: blue;
+}
+
+/************
+ACTORS
+************/
+main { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:50px;
+}
+.box {
+	background: rgb(240, 255, 255, 0.4);
+	border-radius: 3px;
+	padding:0;
+	text-align:center;
+}
+.wrapper .box img{
+	width:110px;
+}
+
+/************
+FOOTER
+************/
+footer {
+  text-align: center;
+}
+
+/************
+RWD
+************/
+@media (max-width: 700px) {
+
+  main,
+  aside {
+    grid-column: 1 / span 5;
+  }
+  
+}
+/************
+BUTTON
+************/
+button {
+	background-image: linear-gradient(
+		to left,
+		rgba(0, 179, 179, 0.75) 0%,
+		rgba(145, 149, 251, 0.86) 100%
+	);
+	box-shadow: 0 9px 25px -5px #80ffff;
+	padding: 0.5em 1.9em;
+	border-radius: 8px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+	margin-left:130px;
+}
+button:hover {
+	transform: translatey(3px);
+}
+button:active {
+	transform: translatey(5px);
+}
+/************
+ASIDE
+************/
+.article {
+	font-size: 1em;
+	margin-left:10px;
+}
