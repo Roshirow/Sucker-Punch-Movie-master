@@ -11,6 +11,8 @@ body {
 		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1882231/suckerpunchthree.png)
 		center center repeat fixed;
 	background-size: 100% auto;
+	font-family: 'Merienda', cursive;
+	line-height:25px;
 }
 
 
@@ -43,19 +45,22 @@ main {
 aside {
   grid-column: span 2;
 }
-aside,
-footer {
-	background: rgb(240, 255, 255, 0.2);
-	border-radius: 5px;
-}
 
 /************
 HEADER
 ************/
 /* Your Styles */
 .image img {
-	width: 500px;
+	width: 700px;
 	height: auto;
+}
+header{
+	grid-column:span 2;
+	color:white;
+	font-size:1.4em;
+	font-family: 'Gentium Book Basic', serif;
+	margin:10px;
+	margin-left:50px;
 }
 
 /************
@@ -83,23 +88,26 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top:50px;
-}
-.box {
-	background: rgb(240, 255, 255, 0.4);
-	border-radius: 3px;
-	padding:0;
+	margin-top:50px;
+	margin-bottom:80px;
 	text-align:center;
+	font-size:1.3em;
+	color:white;
 }
 .wrapper .box img{
 	width:110px;
+}
+.wrapper{
+	margin-top:50px;
 }
 
 /************
 FOOTER
 ************/
 footer {
-  text-align: center;
+	text-align: center;
+	color:rgba(255, 255, 255, 0.534);
+	font-size:0.5em;
 }
 
 /************
@@ -143,4 +151,10 @@ ASIDE
 .article {
 	font-size: 1em;
 	margin-left:10px;
+	margin-right:10px;
+	padding:10px;
+	padding-right:5px;
+	background-color:rgba(179, 218, 255, 0.384);
+	color:rgb(3, 6, 180);
+	border-radius:8px;
 }
